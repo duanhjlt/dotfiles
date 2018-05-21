@@ -101,7 +101,7 @@ set directory=/tmp      "设置临时文件目录
 set ignorecase          "检索时忽略大小写
 set hls                 "检索时高亮显示匹配项
 set helplang=cn         "帮助系统设置为中文
-set foldmethod=syntax   "代码折叠
+" set foldmethod=syntax   "代码折叠
 "set nowrap              "关闭自动折行
 
 set linebreak   "Break lines at word (requires Wrap lines)
