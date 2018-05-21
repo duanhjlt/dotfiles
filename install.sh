@@ -7,7 +7,7 @@ if [ -d "$FOLDER/.git" ]; then
     ln -s $FOLDER/.vimrc ~/.vimrc 
 fi
 
-if [ -d "~/.vim/bundle/Vundle.vim" ] ; then
+if [ -d "~/.vim/bundle/Vundle.vim" ]; then
     echo "vundle for vim already installed"
 else
     mkdir -p ~/.vim/bundle
