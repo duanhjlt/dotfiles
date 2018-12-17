@@ -15,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'dracula/vim'
 
 " Add maktaba and codefmt to the runtimepath.
@@ -67,6 +67,7 @@ set hls                 "检索时高亮显示匹配项
 set helplang=cn         "帮助系统设置为中文
 " set foldmethod=syntax   "代码折叠
 "set nowrap              "关闭自动折行
+set backspace=2         " 解决插入模式下delete/backspce键失效问题
 
 set linebreak   "Break lines at word (requires Wrap lines)
 set nolist         " list disables linebreak
@@ -114,14 +115,14 @@ set listchars=tab:>-,trail:~,extends:>,precedes:<
 "set listchars=eol: ,tab:>-,trail:~,extends:>,precedes:<
 
 
-augroup autoformat_settings
-  autocmd FileType bzl AutoFormatBuffer buildifier
-  autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
-  autocmd FileType dart AutoFormatBuffer dartfmt
-  autocmd FileType go AutoFormatBuffer gofmt
-  autocmd FileType gn AutoFormatBuffer gn
-  autocmd FileType html,css,json AutoFormatBuffer js-beautify
-  autocmd FileType java AutoFormatBuffer google-java-format
-  autocmd FileType python AutoFormatBuffer yapf
-  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
-augroup END
+"augroup autoformat_settings
+"  autocmd FileType bzl AutoFormatBuffer buildifier
+"  autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+"  autocmd FileType dart AutoFormatBuffer dartfmt
+"  autocmd FileType go AutoFormatBuffer gofmt
+"  autocmd FileType gn AutoFormatBuffer gn
+"  autocmd FileType html,css,json AutoFormatBuffer js-beautify
+"  autocmd FileType java AutoFormatBuffer google-java-format
+"  autocmd FileType python AutoFormatBuffer yapf
+"  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+"augroup END
