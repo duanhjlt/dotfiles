@@ -26,6 +26,8 @@ Plugin 'google/vim-codefmt'
 " `:help :Glaive` for usage.
 Plugin 'google/vim-glaive'
 
+Plugin 'mileszs/ack.vim'
+
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 map <F2> :NERDTreeToggle<CR>
@@ -126,3 +128,6 @@ set listchars=tab:>-,trail:~,extends:>,precedes:<
 "  autocmd FileType python AutoFormatBuffer yapf
 "  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
 "augroup END
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
