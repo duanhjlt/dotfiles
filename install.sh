@@ -4,7 +4,10 @@ FOLDER=$(pwd)
 
 if [ -d "$FOLDER/.git" ]; then
     rm -rf ~/.vimrc
-    ln -s $FOLDER/.vimrc ~/.vimrc 
+    ln -s $FOLDER/.vimrc ~/.vimrc
+
+    rm -rf ~/.spacemacs
+    ln -s $FOLDER/.spacemacs ~/.spacemacs
 fi
 
 cd ~/.vim
